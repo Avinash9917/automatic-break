@@ -1,0 +1,16 @@
+project_id = "iamiurlszfdpmfgmshhb"
+
+[functions.ai-recommendations]
+verify_jwt = true
+
+[functions.fetch-photos]
+verify_jwt = true
+
+[functions.google-photos-token]
+verify_jwt = true
+
+[functions.spotify-music]
+verify_jwt = false
+
+[functions.youtube-music-token]
+verify_jwt = true

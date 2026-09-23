@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Automatic Break Time</title>
+    <script>
+      // Single Page Apps for GitHub Pages routing fallback
+      var pathname = window.location.pathname;
+      var search = window.location.search;
+      var segments = pathname.split('/').filter(Boolean);
+      
+      // If deployed in a GitHub repository subfolder like /automatic-break/
+      if (segments.length > 0) {
+        var repoName = segments[0];
+        var rest = segments.slice(1).join('/');
+        var targetUrl = window.location.origin + '/' + repoName + '/#' + (rest ? '/' + rest : '') + search;
+        window.location.replace(targetUrl);
+      } else {
+        window.location.replace(window.location.origin + '/#' + pathname + search);
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
